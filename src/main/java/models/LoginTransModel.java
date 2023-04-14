@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.SplitPane;
+
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -45,10 +45,8 @@ public class LoginTransModel
 		
 		try 
 		{
-			SplitPane view = loader.load();
-			AnchorPane P = new AnchorPane();
-			view.getItems().addAll(P);
-			//LoginController cont = new LoginController();
+			AnchorPane view = loader.load();
+	
 			Scene s = new Scene(view);
 			stage.setScene(s);
 			stage.show();
