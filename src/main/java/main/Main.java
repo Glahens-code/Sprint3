@@ -17,7 +17,7 @@ public class Main extends Application
 	@Override
 	// Our model will do all the functionality by calling this method
 	// our controller will reference our model
-	// we are transitioing scenes but need to have a hold of the 
+	// we are transitioning scenes but need to have a hold of the 
 	// the same stage
 	public void start(Stage stage) throws Exception 
 	{
@@ -25,12 +25,11 @@ public class Main extends Application
 		loader.setLocation(Main.class.getResource("/views/Login_View.fxml"));
 		AnchorPane view = loader.load();
 		Scene s = new Scene(view);
-		
+		//LoginController cont = new 
 		stage.setScene(s);
 		
 		stage.show();
 		
-		///
 
 	}
 	
